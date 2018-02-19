@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import logo from './emoji.png';
 import './App.css';
 import Chat from "./Chat.js";
-
-
-
 class Landing extends Component {
     constructor(props){
         super(props);
@@ -51,7 +48,7 @@ class Landing extends Component {
        Siqi Li first chose Software Engineering in her undergraduate study in China. Being enrolled in the Digital Design and Development program at BCIT, she learn 3 major departments of the tech industry:Web Development, Design and Marketing.   
 
         </p>
-         <p class="bio">Siqi likes to cook & watch TV :P</p>
+         <p className="bio">Siqi likes to cook & watch TV :P</p>
         
         </div>
         
@@ -63,7 +60,7 @@ class Landing extends Component {
         <p>
     After graduating from Digital Media program in Taiwan, Falicia joined Tai Yar Fashion International as a junior graphic designer. Then, she attended Digital Design and Development at BCIT in 2016. 
  </p>
-        <p class="bio">Falicia can't live without coffee :(</p>
+        <p className="bio">Falicia can't live without coffee :(</p>
 
         </div>
        <div>
