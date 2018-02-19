@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
-
+import './App.css';
 
 class Sticker extends Component {
-    constructor(props){
-      
-        }
-     
+   
     
   render() {
       
              
     return (
-        <div>
-        
-        
-      <p>sticker</p>
+    <div>
+      <p className="w">sticker</p>
         </div>
     );
   }
