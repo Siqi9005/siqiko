@@ -15,11 +15,16 @@ class Landing extends Component {
     
       this.changePages= this.changePages.bind(this);
         this.showchat = this.showchat.bind(this);
+        this.sticker = this.sticker.bind(this);
     }
 
     
     changePages(){
         var page = "Chat";
+       this.props.changepage(page);
+    }
+    sticker(){
+        var page = "sticker";
        this.props.changepage(page);
     }
     showchat(){
@@ -71,6 +76,7 @@ class Landing extends Component {
     :null
 }
           <button className="but1" onClick = {this.showchat.bind(this)}>Chat Now</button>
+          <button className="but1" onClick = {this.sticker.bind(this)}>Sticker Page</button>
         </div>
         
       </div>

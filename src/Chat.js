@@ -34,14 +34,14 @@ class Chat extends Component {
             mode:1
         })
         
-        this.socket = mySocket("https://siqikosocket.herokuapp.com/");
+        this.socket = mySocket("http://localhost:10001");
         this.socket.emit("username", this.state.username);
         this.socket.on("usersJoined",(data) =>{
             this.setState({
                 users:data
             })
             
-           
+            
         })
         this.socket.on("mdsgent",(data) =>{
             this.setState({
