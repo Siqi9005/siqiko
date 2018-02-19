@@ -41,7 +41,7 @@ class Chat extends Component {
                 users:data
             })
             
-            /*hi*/
+           
         })
         this.socket.on("mdsgent",(data) =>{
             this.setState({
