@@ -76,7 +76,7 @@ class Landing extends Component {
     :null
 }
           <button className="but1" onClick = {this.showchat.bind(this)}>Chat Now</button>
-          <button className="but1" onClick = {this.sticker.bind(this)}>Sticker Page</button>
+          <button className="but2" onClick = {this.sticker.bind(this)}>Sticker Page</button>
         </div>
         
       </div>
