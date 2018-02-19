@@ -1,0 +1,200 @@
+.App {
+  text-align: center;
+    
+}
+Body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+
+.chatd{
+    margin-right: 3%;
+    width: 35%;
+    height: 20%;
+    text-align: center;
+    clear: both;
+    color: aliceblue;
+    float: right;
+    background-color:darkorange;
+    border-radius: 15px;
+    margin-top: 15px;
+    
+}
+.chat{
+    background-color:darkorange;
+    position:absolute;
+    height: 75%;
+    width:90%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto; 
+     -moz-border-radius: 1%;
+	-webkit-border-radius: 1%;
+	border-radius: 1%;
+     border-color: 2px solid black;
+    
+    
+}
+#topbar{
+    top:0;
+    position: absolute;
+    height:10%;
+    width:100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    background-color: darkorange;
+}
+
+.inptinfo{
+    position: relative;
+   bottom:0%;
+    width: 100%;
+    height: 10%;
+    
+    
+}
+.inp1{
+    position: absolute;
+    width: 80%;
+    height: 130%;
+    right: 0%;
+    top:10%;
+}
+.sentence{
+     position:relative;
+    width:65%;
+    height:80%;
+    text-align: center;
+    margin: 0;
+    float:right;
+    overflow: scroll;
+}
+
+.but1{
+    position: absolute;
+    top:83%;
+    left:44%;
+    color:white;
+    background-color:darkorange;
+    border: 3px solid white;
+    width:14%;
+    height: 7%;
+}
+
+
+#chatDisplay{
+    width:100%;
+    background-color: white;
+    float: right;
+    height: 60%;
+    overflow: scroll;
+    
+    
+    
+}
+#allUsers{
+    position: relative;
+    margin-left:10px;
+    width:20%;
+    background-color: darkorange;
+    height:76%;
+    text-align: center;
+    margin: 0;
+    margin-top:-2px;
+    border-right-color: 2px solid darkorange;
+   
+    
+}
+
+.input2{
+    position: relative;
+    bottom:20%;
+    padding:10px;
+    border-color: white;
+    width:90%;
+    left:-1%;
+
+
+}
+.btn2{
+    height: 33px;
+    position:relative;
+    background-color: darkorange;
+    bottom:20%;
+    padding:3px;
+    border-color:2px solid white;
+    font-size: 1em;
+    color: white;
+}
+
+.input1{
+    padding:2%;
+    border-color: white;
+    width:40%; 
+    position: relative;
+    top:20%;
+
+}
+.send{
+    height: 50px;
+    position:absolute;
+    background-color: darkorange;
+    padding:6px;
+    border-color: white;
+    font-size: 1em;
+    color: white;
+     position: relative;
+    top:20%;
+}
+ul{
+    position: absolute;
+    top:15px;
+    width: 100%;
+    
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10%;
+    float: right;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+   
+    
+}
+
+
+.App-intro {
+   text-align: center;
+    color: white;
+    position:relative;
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:10px;
+    text-align: center;
+    color:white;
+    font-size:15pt;
+}
+.App-intro2{
+    text-align: center;
+    color: white;
+    position:relative;
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:10px;
+    text-align: center;
+    color:white;
+    font-size:15pt;
+}
+
+
