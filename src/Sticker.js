@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-class App extends Component {
+class Sticker extends Component {
     constructor(props){
       
         }
@@ -20,4 +20,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Sticker;
