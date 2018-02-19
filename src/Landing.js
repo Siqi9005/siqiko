@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './emoji.png';
-
 import './App.css';
 import Chat from "./Chat.js";
 
