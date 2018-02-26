@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import mySocket from "socket.io-client";
-import Room from "./Room";
+import Room from "./Room.js";
 
-class App extends Component {
+class Sticker extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -170,4 +170,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Sticker;
