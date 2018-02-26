@@ -79,7 +79,8 @@ class Landing extends Component {
         closePopup={this.showchat.bind(this)}
     />
     :null
-    
+        
+        <div>
         {this.state.stickerclicked ?
         
         <Sticker
@@ -91,7 +92,7 @@ class Landing extends Component {
           <button className="but1" onClick = {this.showchat.bind(this)}>Chat Now</button>
           <button className="but2" onClick = {this.showsticker.bind(this)}>Sticker Page</button>
         </div>
-        
+        </div>
       </div>
     );
   }
