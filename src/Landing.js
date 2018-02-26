@@ -9,7 +9,7 @@ class Landing extends Component {
         super(props);
         this.state={
             clicked:false,
-            stickerclicked:false
+            showclicked:false,
         };
     
         this.changePages= this.changePages.bind(this);
@@ -34,9 +34,10 @@ class Landing extends Component {
     
     showsticker(){
         this.setState({
-            stickerclicked:!this.state.stickerclicked
+            showclicked:!this.state.clicked
         });
     }
+    
     
   render() {
       
@@ -79,20 +80,21 @@ class Landing extends Component {
         closePopup={this.showchat.bind(this)}
     />
     :null
+        }
         
-        <div>
-        {this.state.stickerclicked ?
+        {this.state.clicked ?
         
-        <Sticker
+        <Sticker 
         closePopup={this.showsticker.bind(this)}
     />
     :null
-    
-}
+        }
+        
+        
           <button className="but1" onClick = {this.showchat.bind(this)}>Chat Now</button>
           <button className="but2" onClick = {this.showsticker.bind(this)}>Sticker Page</button>
         </div>
-        </div>
+        
       </div>
     );
   }
