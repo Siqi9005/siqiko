@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './emoji.png';
 import './App.css';
 import Chat from "./Chat.js";
-import Room from "./Room.js";
+import Sticker from "./Sticker.js";
 
 class Landing extends Component {
     constructor(props){
@@ -11,7 +11,7 @@ class Landing extends Component {
             clicked:false
         };
     
-      this.changePages= this.changePages.bind(this);
+        this.changePages= this.changePages.bind(this);
         this.showchat = this.showchat.bind(this);
         this.sticker = this.sticker.bind(this);
     }
