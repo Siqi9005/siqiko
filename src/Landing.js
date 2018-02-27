@@ -81,7 +81,10 @@ class Landing extends Component {
     />
     :null
         }
+        </div>
         
+        
+        <div>
         {this.state.clicked ?
         
         <Sticker 
@@ -89,11 +92,11 @@ class Landing extends Component {
     />
     :null
         }
-        
+        </div>
         
           <button className="but1" onClick = {this.showchat.bind(this)}>Chat Now</button>
           <button className="but2" onClick = {this.showsticker.bind(this)}>Sticker Page</button>
-        </div>
+        
         
       </div>
     );
