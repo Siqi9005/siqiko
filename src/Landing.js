@@ -15,6 +15,7 @@ class Landing extends Component {
         this.changePages= this.changePages.bind(this);
         this.showchat = this.showchat.bind(this);
         this.showsticker = this.showsticker.bind(this);
+        this.sticker = this.sticker.bind(this);
     }
 
     
@@ -81,23 +82,23 @@ class Landing extends Component {
     />
     :null
         }
-        </div>
         
         
-        <div>
-        {this.state.clicked ?
         
-        <Sticker 
-        closePopup={this.showsticker.bind(this)}
-    />
-    :null
-        }
-        </div>
-        
+//        <div>
+//        {this.state.clicked ?
+//        
+//        <Sticker 
+//        closePopup={this.showsticker.bind(this)}
+//    />
+//    :null
+//        }
+//        </div>
+//        
           <button className="but1" onClick = {this.showchat.bind(this)}>Chat Now</button>
-          <button className="but2" onClick = {this.showsticker.bind(this)}>Sticker Page</button>
+          <button className="but2" onClick = {this.sticker}>Sticker Page</button>
         
-        
+     </div>   
       </div>
     );
   }
