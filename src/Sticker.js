@@ -7,8 +7,8 @@ class Sticker extends Component {
     constructor(props){
         super(props);
         this.state = {
-            myImg:require("./1.png"),
-            myImg2:require("./2.png"),
+            myImg:require("./img/1.png"),
+            myImg2:require("./img/2.png"),
             allusers:[],
             myId:null,
             showDisplay:false,
