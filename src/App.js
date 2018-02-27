@@ -35,8 +35,8 @@ class App extends Component {
       else if(this.state.page === "Chat"){
           cPage = <Chat/>
       }
-    else if (this.state.page === ""){
-        cPage = < Sticker />
+    else if (this.state.page === "Sticker"){
+        cPage = <Sticker />
     }
     return (
         <div>
