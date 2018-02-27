@@ -84,21 +84,11 @@ class Landing extends Component {
         }
         
         
-        
-//        <div>
-//        {this.state.clicked ?
-//        
-//        <Sticker 
-//        closePopup={this.showsticker.bind(this)}
-//    />
-//    :null
-//        }
-//        </div>
-//        
+      
           <button className="but1" onClick = {this.showchat.bind(this)}>Chat Now</button>
           <button className="but2" onClick = {this.sticker}>Sticker Page</button>
         
-     </div>   
+        </div>   
       </div>
     );
   }
