@@ -3,9 +3,7 @@ import logo from './emoji.png';
 import './App.css';
 import Chat from "./Chat.js";
 import Sticker from "./Sticker.js";
-
-//hahaha
-
+import Game from "./Game.js";
 
 class Landing extends Component {
     constructor(props){
@@ -19,6 +17,7 @@ class Landing extends Component {
         this.showchat = this.showchat.bind(this);
         this.showsticker = this.showsticker.bind(this);
         this.sticker = this.sticker.bind(this);
+        this.game = this.game.bind(this);
     }
 
     
@@ -28,6 +27,10 @@ class Landing extends Component {
     }
     sticker(){
         var page = "Sticker";
+       this.props.changepage(page);
+    }
+    game(){
+        var page = "Game";
        this.props.changepage(page);
     }
     showchat(){
@@ -42,7 +45,16 @@ class Landing extends Component {
         });
     }
     
-    
+     showgame(){
+        this.setState({
+            showclicked:!this.state.clicked
+        });
+    }
+     showquestion(){
+        this.setState({
+            showclicked:!this.state.clicked
+        });
+    }
   render() {
       
     return (
@@ -90,6 +102,8 @@ class Landing extends Component {
       
           <button className="but1" onClick = {this.showchat.bind(this)}>Chat Now</button>
           <button className="but2" onClick = {this.sticker}>Sticker Page</button>
+          <button className="but3" onClick = {this.game}>Game Page</button>
+          <button className="but4" onClick = {this.showquestion.bind(this)}>Question Page</button>
         
         </div>   
       </div>

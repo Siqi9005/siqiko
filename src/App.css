@@ -78,7 +78,7 @@ Body{
 .but1{
     position: absolute;
     top:83%;
-    left:34%;
+    left:14%;
     color:white;
     background-color:darkorange;
     border: 3px solid white;
@@ -88,7 +88,27 @@ Body{
 .but2{
     position: absolute;
     top:83%;
+    left:34%;
+    color:white;
+    background-color:darkorange;
+    border: 3px solid white;
+    width:14%;
+    height: 7%;
+}
+.but3{
+    position: absolute;
+    top:83%;
     left:54%;
+    color:white;
+    background-color:darkorange;
+    border: 3px solid white;
+    width:14%;
+    height: 7%;
+}
+.but4{
+    position: absolute;
+    top:83%;
+    left:74%;
     color:white;
     background-color:darkorange;
     border: 3px solid white;
