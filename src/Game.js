@@ -95,7 +95,7 @@ setInterval(this.randomMove,1000);
             ending:true
         });
          
-        alert(this.state.username+ " Your Score is:"+this.state.userScore);    
+        alert("User Name:"+ this.state.username+ ""+" score is: "+this.state.userScore);    
     }
     
   render() {
