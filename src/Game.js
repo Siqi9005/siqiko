@@ -128,8 +128,7 @@ setInterval(this.randomMove,1200);
                             </div>
             
                          <p id="num" class="text">Score:{this.state.usersScore} 0</p>  
-            
-
+        
                             <img ref="random" className="image1" src={this.state.img1} onMouseDown= {this.handleImage} onMouseUp= {this.handleImage2} 
                 
                 height={150} />
