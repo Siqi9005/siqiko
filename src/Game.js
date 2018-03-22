@@ -131,12 +131,7 @@ setInterval(this.randomMove,1000);
                            <div id="username">
                                 Your Name: {this.state.username}  
                             </div>
-                        <div id="alluser"> All User:{allUsers}</div>
-
-                            <div id="num">
-                Your Score: {this.state.userScore} </div>  
-
-                
+                    
                             <button onClick={this.end} id="endbutton">END GAME</button>
                 
                          
