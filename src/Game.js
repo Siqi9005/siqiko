@@ -86,8 +86,6 @@ class Game extends Component {
 setInterval(this.randomMove,1200);
         
     }
-    
-
      end(){
          
         this.setState({
@@ -109,7 +107,7 @@ setInterval(this.randomMove,1200);
       var comp = null;
          if(this.state.mode === 0){
             comp = (
-            <div id="userTname">
+            <div id="information">
                 
                 <input className="nameText" type = "text" placeholder = "Please type your name" onChange={this.handleUsername} />
                 
