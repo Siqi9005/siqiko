@@ -123,15 +123,13 @@ setInterval(this.randomMove,1200);
       else if(this.state.mode === 1){
                 
             comp = (
-                <div id="gameContainer">
-                        <div>                 
-                           <div id="username">
-                                Your Name: {this.state.username}  
+                <div id="div"></div>
+                    <div id="background">               
+                           <div id="user">Name: {this.state.username}  
                             </div>
-                            <div id="alluser"> All User:{allUsers}</div>
 
-<img id="img" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;" ondragstart="return false;"> 
-                
+        <img id="img" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;" ondragstart="return false;"> 
+                </div>
                          <p id="num" class="text">Score:{this.state.usersScore} 0</p>  
                          
                         </div>
