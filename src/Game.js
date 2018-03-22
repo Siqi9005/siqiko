@@ -91,6 +91,7 @@ setInterval(this.randomMove,1200);
         this.setState({
             ending:true
         });
+           alert(this.state.username+ "User's Score is:"+this.state.userScore);     
     }
     
   render() {
@@ -128,11 +129,10 @@ setInterval(this.randomMove,1200);
                             </div>
                         <div id="alluser"> All User:{allUsers}</div>
 
-                            <div id="text">
-                    Your Score: {this.state.userScore} </div>  
+                            <div id="text">Score: {this.state.userScore}</div>  
 
                 
-                            <button onClick={this.end} id="end">END GAME</button>
+     <button onClick={this.end} id="end">END GAME</button>
                          
                         </div>
                             <img ref="random" className="image1" src={this.state.img1} onMouseDown= {this.handleImage} onMouseUp= {this.handleImage2} 
