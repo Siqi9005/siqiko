@@ -95,7 +95,7 @@ setInterval(this.randomMove,1000);
             ending:true
         });
          
-        alert("User Name:"+ this.state.username+ ""+" score is: "+this.state.userScore);    
+        alert("User Name:"+ this.state.username+ "," +" score is: "+this.state.userScore);    
     }
     
   render() {
@@ -112,7 +112,7 @@ setInterval(this.randomMove,1000);
       var comp = null;
          if(this.state.mode === 0){
             comp = (
-            <div id="userTname">
+            <div id="information">
                 
                 <input className="nameText" type = "text" placeholder = "Please type your name" onChange={this.handleUsername} />
                 
@@ -128,10 +128,7 @@ setInterval(this.randomMove,1000);
             comp = (
                 <div id="gdiv">
                         <div>                 
-                           <div id="username">
-                                Your Name: {this.state.username}  
-                            </div>
-                    
+            
                             <button onClick={this.end} id="endbutton">END GAME</button>
                 
                          
