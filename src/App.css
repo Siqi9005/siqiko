@@ -282,29 +282,7 @@ li{
          margin-top:20%;
          width: 50px;
          height: 50px; 
-    }
-
-   #username{
-         position:absolute;
-         top: 0;
-         left: 0;
-         bottom:0;
-         right: 0;
-         margin: auto;
-         width: 50px;
-         height: 50px; 
-    }
-   #alluser{
-         position:absolute;
-         top: 0;
-         left: 0;
-         bottom:0;
-         right: 0;
-         margin: auto;
-         width: 50px;
-         height: 50px; 
-    }
-   
+}
 #endbutton{
     width:100px;
     height:50px;
