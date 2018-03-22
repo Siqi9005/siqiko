@@ -90,7 +90,7 @@ class Landing extends Component {
         
         <p>About Falicia</p>
         <p>
-    After graduating from Digital Media program in Taiwan, Falicia joined Tai Yar Fashion International as a junior graphic designer. Then, she attended Digital Design and Development at BCIT in 2016. 
+    After graduating from Digital Media program in Taiwan, Falicia joined Tai Yar Fashion International as a junior graphic designer. Then, she attended Digital Design and Development at BCIT in 2017. 
  </p>
         <p className="bio">Falicia can't live without coffee :(</p>
 
