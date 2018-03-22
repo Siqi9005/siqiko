@@ -83,15 +83,19 @@ class Game extends Component {
             
         });
         
-setInterval(this.randomMove,1200);
+setInterval(this.randomMove,1000);
         
     }
+    
+    
+
      end(){
          
         this.setState({
             ending:true
         });
-           alert(this.state.username+ "User's Score is:"+this.state.userScore);     
+         
+        alert(this.state.username+ " Your Score is:"+this.state.userScore);    
     }
     
   render() {
@@ -108,7 +112,7 @@ setInterval(this.randomMove,1200);
       var comp = null;
          if(this.state.mode === 0){
             comp = (
-            <div id="information">
+            <div id="userTname">
                 
                 <input className="nameText" type = "text" placeholder = "Please type your name" onChange={this.handleUsername} />
                 
@@ -129,21 +133,30 @@ setInterval(this.randomMove,1200);
                             </div>
                         <div id="alluser"> All User:{allUsers}</div>
 
-                            <div id="text">Score: {this.state.userScore}</div>  
+                            <div id="num">
+                Your Score: {this.state.userScore} </div>  
 
                 
-     <button onClick={this.end} id="end">END GAME</button>
+                            <button onClick={this.end} id="end">END GAME</button>
+                
                          
                         </div>
+
                             <img ref="random" className="image1" src={this.state.img1} onMouseDown= {this.handleImage} onMouseUp= {this.handleImage2} 
                 
                 height={150} />
-       </div>
+                
+
+
+                 </div>
         );   
             
             
         }
-      return (
+      
+
+    
+    return (
         <div>
         
         {comp}
