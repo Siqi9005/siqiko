@@ -125,14 +125,9 @@ setInterval(this.randomMove,1200);
             comp = (
                 <div id="div"></div>
                     <div id="background">               
-                           <div id="user">Name: {this.state.username}  
-                            </div>
-
-        <img id="img" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;" ondragstart="return false;"> 
-                </div>
+                    <div id="user">Name: {this.state.username}</div>
+                <img id="img" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;" ondragstart="return false;"></div>
                          <p id="num" class="text">Score:{this.state.usersScore} 0</p>  
-                         
-                        </div>
 
                             <img ref="random" className="image1" src={this.state.img1} onMouseDown= {this.handleImage} onMouseUp= {this.handleImage2} 
                 
