@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import mySocket from "socket.io-client";
-//ssssss
 class Question extends Component {
     constructor(props){
         super(props);
