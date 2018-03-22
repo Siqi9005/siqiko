@@ -121,12 +121,21 @@ setInterval(this.randomMove,1200);
       else if(this.state.mode === 1){
                 
             comp = (
-                <div id="div">              
-                           <div id="user">Name: {this.state.username}  
+                <div id="gameContainer">
+                        <div>                 
+                           <div id="username">
+                                Your Name: {this.state.username}  
                             </div>
-            
-                         <p id="num" class="text">Score:{this.state.usersScore} 0</p>  
-        
+                        <div id="alluser"> All User:{allUsers}</div>
+
+                            <div id="num">
+                Your Score: {this.state.userScore} </div>  
+
+                
+                            <button onClick={this.end} id="end">END GAME</button>
+                
+                         
+                        </div>
                             <img ref="random" className="image1" src={this.state.img1} onMouseDown= {this.handleImage} onMouseUp= {this.handleImage2} 
                 
                 height={150} />
