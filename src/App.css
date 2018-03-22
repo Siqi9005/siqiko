@@ -261,4 +261,46 @@ li{
 .allImgs {
     position:absolute;
 }
+#div{
+       position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        z-index: -99;
+        
+    }
+    
+    
+    #background{
+         position:absolute;
+         top: 10%;
+         left: 10%;
+         width:100%;
+         height: 100%;
+    }
+    
+    #buttons{
+         position:absolute;
+         top: 0;
+         left: 0;
+         bottom:0;
+         right: 0;
+         margin: auto;
+         width: 50px;
+         height: 50px; 
+    }
+  
+    .text{
+         color:red;
+         font-size: 35px;  
+    }
+    
+    
+     @keyframes animaSelected {
+        0%   { opacity: 0; }
+        50% { opacity: 0.9; }
+        100%   { opacity: 0; }
+      }
 
