@@ -69,7 +69,6 @@ class Question extends Component {
         
         var comp = null;
         
-        //if stage is at 0, choose a room. Room component
         if(this.state.stage ===0){
               comp = (
                 <div>
