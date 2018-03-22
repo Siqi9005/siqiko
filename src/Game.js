@@ -31,26 +31,18 @@ class Game extends Component {
           
     
     
+ randomMove() {
+       
+  this.refs["random"].style.top = Math.floor(Math.random() * window.innerHeight) + "px";
     
-     randomMove() {
-         
-     /*this.refs["im"].style.position = "absolute";*/ 
-         
-  this.refs["im"].style.top = Math.floor(Math.random() * window.innerHeight) + "px";
-    
-   this.refs["im"].style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+   this.refs["random"].style.left = Math.floor(Math.random() * window.innerWidth) + "px";
          
    
 }
     
-    
     handleImage(){
-        
-
-        
-       this.refs["im"].src = this.state.img2;
-        
-        
+    
+       this.refs["random"].src = this.state.img2; 
         
        this.setState({
             userScore:this.state.userScore +1
@@ -59,10 +51,8 @@ class Game extends Component {
     }
     
     handleImage2(){
-        
-
-        
-       this.refs["im"].src = this.state.img1;
+           
+       this.refs["random"].src = this.state.img1;
         
         
     }
@@ -89,15 +79,13 @@ class Game extends Component {
                 users:data
             })
             
-            
-            
+             
             
         });
         
-setInterval(this.randomMove,1000);
+setInterval(this.randomMove,1200);
         
     }
-    
     
 
      end(){
@@ -105,8 +93,6 @@ setInterval(this.randomMove,1000);
         this.setState({
             ending:true
         });
-         
-        alert(this.state.username+ " Your Score is:"+this.state.userScore);    
     }
     
   render() {
@@ -144,16 +130,13 @@ setInterval(this.randomMove,1000);
                             </div>
                             <div id="alluser"> All User:{allUsers}</div>
 
-                            <div id="score">
-                Your Score: {this.state.userScore} </div>  
-
+<img id="img" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;" ondragstart="return false;"> 
                 
-                            <button onClick={this.end} id="end">END GAME</button>
-                
+                         <p id="num" class="text">Score:{this.state.usersScore} 0</p>  
                          
                         </div>
 
-                            <img ref="im" className="image1" src={this.state.img1} onMouseDown= {this.handleImage} onMouseUp= {this.handleImage2} 
+                            <img ref="random" className="image1" src={this.state.img1} onMouseDown= {this.handleImage} onMouseUp= {this.handleImage2} 
                 
                 height={150} />
                 
