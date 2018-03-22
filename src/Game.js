@@ -132,8 +132,6 @@ setInterval(this.randomMove,1200);
                             <img ref="random" className="image1" src={this.state.img1} onMouseDown= {this.handleImage} onMouseUp= {this.handleImage2} 
                 
                 height={150} />
-                
-
 
                  </div>
         );   
