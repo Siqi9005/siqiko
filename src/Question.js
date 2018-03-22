@@ -129,4 +129,4 @@ class Question extends Component {
     }
 }
 
-export default Test;
+export default Question;
