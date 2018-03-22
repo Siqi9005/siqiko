@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import './Game.css';
+import './App.css';
 
 import mySocket from "socket.io-client";
 
@@ -26,7 +26,7 @@ class Game extends Component {
         this.handleImage = this.handleImage.bind(this);
         this.randomMove = this.randomMove.bind(this);
         this.end = this.end.bind(this);
-      this.handleImage2 = this.handleImage2.bind(this);
+        this.handleImage2 = this.handleImage2.bind(this);
     }
           
     
@@ -145,10 +145,7 @@ setInterval(this.randomMove,1200);
             
             
         }
-      
-
-    
-    return (
+      return (
         <div>
         
         {comp}
